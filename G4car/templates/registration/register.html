@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Registre nova conta - G4Car
+    Registro - G4Car
 {% endblock %}
 
 {% block main %}
-    <h3>Registre uma nova conta</h3>
+    <h3>Registre um novo usuario</h3>
     <form method="post">
-
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Registrar</button>
     </form>
 {% endblock %}

@@ -24,12 +24,12 @@
         <a href="accounts/logout/">sair</a> )
     {% else %}
         (user not found |
-        <a href="accounts/login/">login</a>
-        <a href="">registrar</a>
+        <a href="accounts/login/">login</a> |
+        <a href="registrar/">registrar</a>
         )
     {% endif %}
 
     <br> <br>
 
-    <img src="{% static 'img/fundo.png' %}" width="600">
+    <img src="{% static 'img/fundo.png' %}" width="700">
 {% endblock %}
