@@ -7,6 +7,12 @@
 {% block main %}
     <h1>Lista de clientes:</h1>
 
+    <form method="post">
+        {% csrf_token %}
+    <input type="text" name="nome" > &nbsp; <button type="submit">Pesquisar</button>
+    </form>
+    --------------------------------------------------------------- <br>
+
     {% for cliente in clientes %}
 
         Nome: {{ cliente.nome }} &nbsp; | &nbsp;
